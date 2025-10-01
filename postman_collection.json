@@ -1,0 +1,64 @@
+{
+    "info": {
+        "name": "EvaExchange API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Buy",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ \"portfolioId\": 1, \"symbol\": \"AAA\", \"type\": \"BUY\", \"quantity\": 5 }"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/api/trades",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "api",
+                        "trades"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Sell",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ \"portfolioId\": 1, \"symbol\": \"AAA\", \"type\": \"SELL\", \"quantity\": 2 }"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/api/trades",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "api",
+                        "trades"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "eva-exchange-backend",
+  "version": "1.0.0",
+  "description": "Backend for EvaExchange trading game (Sequelize, Postgres, Node, Express, TypeScript)",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "migrate-and-seed": "ts-node src/db/seed.ts",
+    "test": "cross-env NODE_ENV=test jest --runInBand --detectOpenHandles"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "pg": "^8.10.0",
+    "sequelize": "^6.32.1",
+    "sequelize-typescript": "^2.1.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.5.1",
+    "@types/supertest": "^6.0.3",
+    "@types/uuid": "^10.0.0",
+    "cross-env": "^7.0.3",
+    "jest": "^29.6.1",
+    "sqlite3": "^5.1.6",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
